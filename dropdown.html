@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav> ul{
+            display: flex;
+        }
+
+        li,a{
+            list-style: none;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .dropdown{
+            display: none;
+        }
+
+        nav  ul li:hover,  nav  ul li:hover .dropdown{
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>my first dropdown menu</h1>
+
+    <nav>
+        <ul>
+            <li><a href="">sayem</a></li>
+            <li>
+                <a href="">samy</a>
+                <ul class="dropdown">
+                    <li><a href="">sayem</a></li>
+                    <li><a href="">samy</a></li>
+                    <li><a href="">samim</a></li>
+                    <li><a href="">karim</a></li>
+                </ul>
+            </li>
+            <li><a href="">samim</a></li>
+            <li><a href="">karim</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
